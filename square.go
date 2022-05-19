@@ -6,19 +6,19 @@ type Point struct {
 
 type Square struct {
 	start Point
-	side  uint
+	a     uint
 }
 
 func (r *Square) Area() uint {
-	return r.side * r.side
+	return r.a * r.a
 }
 
 func (r Square) Perimeter() uint {
-	return 4 * r.side
+	return 4 * r.a
 }
 
 func (r Square) End() Point {
-	out := Point{r.start.x + int(r.side/2), r.start.y + int(r.side/2)}
+	out := Point{r.start.x + int(r.a/2), r.start.y + int(r.a/2)}
 	return out
 }
 
