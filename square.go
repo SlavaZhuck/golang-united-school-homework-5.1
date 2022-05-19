@@ -18,7 +18,7 @@ func (r Square) Perimeter() uint {
 }
 
 func (r Square) End() Point {
-	out := Point{r.start.x + int(r.a/2), r.start.y + int(r.a/2)}
+	out := Point{r.start.x + int(r.a), r.start.y + int(r.a)}
 	return out
 }
 
